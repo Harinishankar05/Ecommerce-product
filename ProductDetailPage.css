@@ -1,0 +1,61 @@
+.background {
+    background: linear-gradient(to bottom, #F0F8FF 50%, #5F9EA0 50%); /* Creates a gradient */
+    position: fixed; /* Fixed position so it covers the entire viewport */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Keep it behind other content */
+}
+
+
+.product-detail-container {
+    display: flex; /* Use flexbox to arrange items side by side */
+    justify-content: space-between; /* Space between the two sections */
+    margin: 20px; /* Add some margin */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.product-info {
+    flex: 1; /* Allow this section to grow */
+    margin-right: 20px; /* Add some space to the right */
+}
+
+.additional-image {
+    flex: 1; /* Allow this section to grow */
+    text-align: center; /* Center align text in this section */
+}
+
+.button-container {
+    flex-basis: 100%; /* Take full width below the two sections */
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Space above the button */
+}
+
+.proceed-payment-button {
+    padding: 10px 20px; /* Add padding for the button */
+    background-color: #5F9EA0; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size for the button */
+}
+
+.proceed-payment-button:hover {
+    background-color: #4682B4; /* Darker shade on hover */
+}
+.additional-video {
+    flex: 1; /* Allow this section to grow */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Flex container to align video */
+    justify-content: flex-start; /* Align video to the left */
+    margin-left: 20px; /* Add some margin to the left */
+}
+
+.additional-video video {
+    max-width: 100%; /* Ensure the video does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+

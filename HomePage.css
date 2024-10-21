@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.offers {
+    background-color: #e2f0d9;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.deals-of-the-day,
+.suggestions {
+    margin-top: 20px;
+}
+
+.product-list,
+.suggestion-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-card,
+.suggestion-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px; /* Adjust this width as needed */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.product-card {
+    width: 200px;  /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin-top: 5px; /* Space between the product name and the image */
+}
+.sidebar ul li {
+    background-color: #5F9EA0; /* Background color for the category box */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0; /* Margin between items */
+    transition: background-color 0.3s; /* Optional: for hover effect */
+}
+
+.sidebar ul li:hover {
+    background-color: #4e7f8a; /* Darker shade on hover */
+}
+
+.sidebar ul li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link fill the li for easier clicking */
+    padding: 10px; /* Padding for the items */
+}
+
+.sidebar ul li a:hover {
+    color: #e0e0e0; /* Optional: Change color on hover */
+}
+
+
+

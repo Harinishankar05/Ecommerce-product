@@ -1,0 +1,41 @@
+/* Add this to your ProductPage.css or adjust your existing styles */
+
+.product-header {
+    position: relative; /* Positioning for absolute children */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.header-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height for the header */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.header-title {
+    position: absolute; /* Position the title over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    color: white; /* Text color */
+    font-size: 2em; /* Font size for the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds a shadow for better readability */
+}
+
+.product-category {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.product-image {
+    width: 200px; /* Set fixed width */
+    height: 350px; /* Set fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
